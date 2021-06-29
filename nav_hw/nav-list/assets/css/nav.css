@@ -28,7 +28,7 @@ ul {
     position: relative;
     left: 0;
     right: 0;
-    /* width: 100%; */
+
 }
 
 .nav li:hover {
@@ -63,15 +63,17 @@ ul {
 .sub-nav-item:hover > .sub2-nav-list {
     display:block;
 }
-.sub-nav-item::after > .sub2-nav-list {
+.sub-nav-item > .sub2-nav-list {
     display: none;
     position: absolute;
     top: 0%;
-    left: 0%;
-    right: 0;
-   float:inline-start;
+    left: 100%;
+   
+ 
    overflow:hidden;
     
     
 }
- 
+ .sub-nav-item{
+     position: relative;
+ }
